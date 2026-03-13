@@ -1,5 +1,5 @@
 # Musializer Plugin
-Visualizer plugin inspired by [Tsoding's Musializer](https://github.com/tsoding/musializer) with in C++ using JUCE.
+Visualizer plugin inspired by [Tsoding's Musializer](https://github.com/tsoding/musializer).
 
 ## Demo
 https://github.com/user-attachments/assets/bc821e71-e685-4b1a-b64b-f86ef9ee05bc
