@@ -8,15 +8,6 @@ const std::complex<float> I(0.0, 1.0);
 
 #define PI M_PI
 
-#ifdef _MSC_VER
-#    define Float_Complex _Fcomplex
-#    define cbuild(re, im) _FCbuild(re, im)
-#    define cfromreal(re) _FCbuild(re, 0)
-#    define cfromimag(im) _FCbuild(0, im)
-#    define mulcc _FCmulcc
-#    define addcc(a, b) _FCbuild(crealf(a) + crealf(b), cimagf(a) + cimagf(b))
-#    define subcc(a, b) _FCbuild(crealf(a) - crealf(b), cimagf(a) - cimagf(b))
-#else
 #    define Float_Complex std::complex<float>
 #    define cbuild(re, im) ((re) + (im)*I)
 #    define cfromreal(re) (re)
@@ -24,8 +15,6 @@ const std::complex<float> I(0.0, 1.0);
 #    define mulcc(a, b) ((a)*(b))
 #    define addcc(a, b) ((a)+(b))
 #    define subcc(a, b) ((a)-(b))
-#endif
-
 
 #include <juce_audio_processors/juce_audio_processors.h>
 
