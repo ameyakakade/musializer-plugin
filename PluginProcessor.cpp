@@ -253,4 +253,3 @@ void AudioPluginAudioProcessor::fft_push(float frame)
     memmove(in_raw, in_raw + 1, (FFT_SIZE - 1)*sizeof(in_raw[0]));
     in_raw[FFT_SIZE-1] = frame;
 }
-
